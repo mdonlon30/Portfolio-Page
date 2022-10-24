@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: rgb(120,27,204);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    margin-left: 6vw;
+    border: 2px solid gold;
+    padding: 2px;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 3vw;
+}
+
+.links h2 {
+    margin-right: 3vw;
+    padding: 7px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: clamp(10px, 2.5vw, 25px);
+    transition: 1s ease;
+}
+
+.links h2:hover {
+    border-color: gold;
+    color: gold;
+
+}
+
+.links a {
+    text-decoration: none;
+}
+
+
+.jumbotron {
+    background-image: url(../website-img/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    object-fit: contain;
+    background-size: cover;
+    animation: fadein 4s;
+    height: 95vh;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.jumbotron h1 {
+    text-align: center;
+    color: white;
+    font-size: clamp(40px, 8vw, 100px);
+    text-shadow: 10px 10px black;
+    margin: 0 auto;
+    padding-top: 15vh;
+    width: 80vw;
+}
+
+.jumbotron h3 {
+    text-align: center;
+    color: white;
+    font-size: clamp(20px, 5vw, 50px);
+    text-shadow: 5px 5px black;
+    margin:  50px auto;
+    width: 50vw;
+}
+.jumbotron h4 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: 10px 10px black;
+}
+
+.white {
+    height: 80px; 
+}
+
+.purple {
+    background: rgb(227,228,209);
+    background: linear-gradient(0deg, rgba(227,228,209,0) 0%, rgba(131,47,205,0.8477766106442577) 40%, rgba(120,27,204,0.8589810924369747) 60%, rgba(185,182,189,0) 100%);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.purple h1 {
+    color: white;
+    text-align: center;
+    font-size: clamp(50px, 8vw, 100px);
+}
+
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ohgeesy {
+    background-image: url(../website-img/Ohgeesy.PNG);
+
+}
+
+.mockup {
+    background-image: url(../website-img/Drain-guru.PNG);
+}
+
+.hamburger {
+    background-image: url(../website-img/KRK.PNG);
+}
+
+.item {
+    width: 340px;
+    height: 252px;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: width .5s, height 1s;
+    transition-timing-function: ease-out;
+    
+}
+
+.item h2 {
+    width: 100%;
+    text-align: center;
+    background: rgb(120,27,204);
+    background: radial-gradient(circle, rgba(120,27,204,0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
+    color: white;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.item:hover {
+    width: 370px;
+    height: 275px;
+}
+
+.item h2:hover {
+    color: gold;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.about img {
+    width: 400px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+.about div h1{
+    width: clamp(300px, 30vw, 700px);
+    font-size: clamp(20px, 2.5vw, 40px);
+}
+
+.about div {
+    margin: auto 0;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(120,27,204);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 1s ease;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgba(121, 27, 204, 0.571);
+  }
+  
+  .container {
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+footer {
+    background: rgb(227,228,209);
+    background: linear-gradient(0deg, rgba(227,228,209,0) 0%, rgba(131,47,205,0.8477766106442577) 40%, rgba(120,27,204,0.8589810924369747) 60%, rgba(185,182,189,0) 100%);
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+}
+
+footer img:hover {
+    width: 50px;
+    height: 50px;
+    transition: .2s ease-in;
+}
