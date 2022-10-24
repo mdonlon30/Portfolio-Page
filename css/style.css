@@ -73,7 +73,7 @@ nav img {
 .jumbotron h1 {
     text-align: center;
     color: white;
-    font-size: clamp(40px, 8vw, 100px);
+    font-size: clamp(40px, 7vw, 100px);
     text-shadow: 10px 10px black;
     margin: 0 auto;
     padding-top: 15vh;
@@ -83,15 +83,15 @@ nav img {
 .jumbotron h3 {
     text-align: center;
     color: white;
-    font-size: clamp(20px, 5vw, 50px);
-    text-shadow: 5px 5px black;
+    font-size: clamp(20px, 4vw, 50px);
+    text-shadow: 5px 4px black;
     margin:  50px auto;
     width: 50vw;
 }
 .jumbotron h4 {
     text-align: center;
     color: white;
-    font-size: 40px;
+    font-size: clamp(30px, 3.5vw, 50px);
     text-shadow: 10px 10px black;
 }
 
