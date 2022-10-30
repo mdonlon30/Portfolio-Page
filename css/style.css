@@ -60,7 +60,7 @@ nav img {
     background-position: bottom;
     object-fit: contain;
     background-size: cover;
-    animation: fadein 4s;
+    animation: fadein 2s;
     height: 95vh;
 }
 
