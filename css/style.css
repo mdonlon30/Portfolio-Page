@@ -90,10 +90,10 @@ nav img {
 }
 
 
-/* @keyframes fadein {
+@keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-} */
+}
 
 .jumbotron h1 {
     text-align: center;
