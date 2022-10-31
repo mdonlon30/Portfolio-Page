@@ -54,6 +54,30 @@ nav img {
     text-decoration: none;
 }
 
+@media screen and (min-width: 480px) {
+    .btn-group {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .links {
+        display: none;
+    }
+}
+
+.button-style {
+    background: rgb(120,27,204);
+    background: radial-gradient(circle, rgba(120,27,204,0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
+    border-color: white;
+    margin-right: 5vw;
+    background-color:rgba(250, 235, 215, 0.142)
+}
+
+.dropdown-menu li a {
+    font-weight: 500;
+}
+
 
 .jumbotron {
     background-image: url(../website-img/jumbotron.jpg);
