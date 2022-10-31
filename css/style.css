@@ -194,7 +194,7 @@ nav img {
 } */
 
 .caro {
-    width: 90%;
+    width: 100%;
     height: 80%;
 
     margin: 0 auto;
@@ -208,13 +208,13 @@ nav img {
     
 }
 
-.carousel-item {
+/* .carousel-item {
     border-radius: 50px;
 }
 
 .carousel-inner div img {
     border-radius: 50px;
-}
+} */
 
 .carousel-caption h5 {
     background: rgb(120,27,204);
