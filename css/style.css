@@ -13,6 +13,7 @@ body {
 nav {
     background-color: rgb(120,27,204);
     position: sticky;
+    z-index: 3;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -65,10 +66,10 @@ nav img {
 }
 
 
-@keyframes fadein {
+/* @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
+} */
 
 .jumbotron h1 {
     text-align: center;
@@ -115,7 +116,7 @@ nav img {
 }
 
 
-.projects {
+/* .projects {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -165,6 +166,40 @@ nav img {
 }
 
 .item h2:hover {
+    color: gold;
+} */
+
+.caro {
+    width: 90%;
+    height: 80%;
+
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+    .caro {
+        width: 60%;
+        height: 50%;
+    }
+    
+}
+
+.carousel-item {
+    border-radius: 50px;
+}
+
+.carousel-inner div img {
+    border-radius: 50px;
+}
+
+.carousel-caption h5 {
+    background: rgb(120,27,204);
+    background: radial-gradient(circle, rgba(120,27,204,0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
+    transition: 1s ease;
+    font-size: 25px;
+}
+
+.carousel-caption h5:hover {
     color: gold;
 }
 
