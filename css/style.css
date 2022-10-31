@@ -89,11 +89,17 @@ nav img {
     height: 95vh;
 }
 
+@media screen and (max-height: 400px) {
+    .jumbotron {
+        height: 130vh;
+    }
+}
 
-@keyframes fadein {
+
+/* @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-}
+} */
 
 .jumbotron h1 {
     text-align: center;
@@ -108,7 +114,7 @@ nav img {
 .jumbotron h3 {
     text-align: center;
     color: white;
-    font-size: clamp(20px, 4vw, 50px);
+    font-size: clamp(20px, 3.5vw, 50px);
     text-shadow: 5px 4px black;
     margin:  50px auto;
     width: 50vw;
@@ -231,14 +237,14 @@ nav img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 70px;
     margin-top: 70px;
 }
 
 .about img {
-    width: 400px;
-    height: 450px;
-    border-radius: 10%;
+    width: 350px;
+    height: 370px;
+    /* border-radius: 10%; */
 }
 
 .about div h1{
