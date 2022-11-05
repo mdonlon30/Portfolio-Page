@@ -83,7 +83,6 @@ nav img {
     background-image: url(../website-img/jumbotron.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    object-fit: contain;
     background-size: cover;
     animation: fadein 4s;
     height: 95vh;
@@ -96,10 +95,10 @@ nav img {
 }
 
 
-/* @keyframes fadein {
+@keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
-} */
+}
 
 .jumbotron h1 {
     text-align: center;
@@ -244,7 +243,9 @@ nav img {
 .about img {
     width: 350px;
     height: 370px;
-    /* border-radius: 10%; */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid purple;
 }
 
 .about div h1{
