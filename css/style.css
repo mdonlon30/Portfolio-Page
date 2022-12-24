@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    background-color: rgb(120,27,204);
+    background-color: rgb(120, 27, 204);
     position: sticky;
     z-index: 3;
     top: 0;
@@ -67,11 +67,11 @@ nav img {
 }
 
 .button-style {
-    background: rgb(120,27,204);
-    background: radial-gradient(circle, rgba(120,27,204,0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
+    background: rgb(120, 27, 204);
+    background: radial-gradient(circle, rgba(120, 27, 204, 0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
     border-color: white;
     margin-right: 5vw;
-    background-color:rgba(250, 235, 215, 0.142)
+    background-color: rgba(250, 235, 215, 0.142)
 }
 
 .dropdown-menu li a {
@@ -96,8 +96,13 @@ nav img {
 
 
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .jumbotron h1 {
@@ -115,9 +120,10 @@ nav img {
     color: white;
     font-size: clamp(20px, 3.5vw, 50px);
     text-shadow: 5px 4px black;
-    margin:  50px auto;
+    margin: 50px auto;
     width: 50vw;
 }
+
 .jumbotron h4 {
     text-align: center;
     color: white;
@@ -126,12 +132,12 @@ nav img {
 }
 
 .white {
-    height: 80px; 
+    height: 80px;
 }
 
 .purple {
-    background: rgb(227,228,209);
-    background: linear-gradient(0deg, rgba(227,228,209,0) 0%, rgba(131,47,205,0.8477766106442577) 40%, rgba(120,27,204,0.8589810924369747) 60%, rgba(185,182,189,0) 100%);
+    background: rgb(227, 228, 209);
+    background: linear-gradient(0deg, rgba(227, 228, 209, 0) 0%, rgba(131, 47, 205, 0.8477766106442577) 40%, rgba(120, 27, 204, 0.8589810924369747) 60%, rgba(185, 182, 189, 0) 100%);
     height: 200px;
     display: flex;
     justify-content: center;
@@ -145,85 +151,54 @@ nav img {
 }
 
 
-/* .projects {
+.projectsection {
     display: flex;
-    justify-content: center;
-    gap: 40px;
     flex-wrap: wrap;
-}
-
-.ohgeesy {
-    background-image: url(../website-img/Ohgeesy.PNG);
-
-}
-
-.mockup {
-    background-image: url(../website-img/Drain-guru.PNG);
-}
-
-.hamburger {
-    background-image: url(../website-img/KRK.PNG);
-}
-
-.item {
-    width: 340px;
-    height: 252px;
-    background-size: cover;
-    border: 2px solid white;
-    border-radius: 20px;
-    display: flex;
-    align-items: flex-end;
     justify-content: center;
-    transition: width .5s, height 1s;
-    transition-timing-function: ease-out;
-    
+    gap: 10%;
 }
 
-.item h2 {
-    width: 100%;
-    text-align: center;
-    background: rgb(120,27,204);
-    background: radial-gradient(circle, rgba(120,27,204,0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
-    color: white;
-    border-radius: 10px;
-    transition: 1s ease;
+.carouselandtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.item:hover {
-    width: 370px;
-    height: 275px;
+.carouselandtitle h1 {
+    padding: 20px;
 }
-
-.item h2:hover {
-    color: gold;
-} */
 
 .caro {
-    width: 100%;
-    height: 80%;
-
-    margin: 0 auto;
+    width: 500px;
 }
 
-@media screen and (min-width: 700px) {
+.carousel-item img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    height: auto;
+}
+
+.carousel-item {
+    height: auto;
+}
+
+@media screen and (max-width: 500px) {
     .caro {
-        width: 60%;
-        height: 50%;
+        width: 100vw;
     }
-    
+
+    .carousel-item img {
+        height: 35vh;
+    }
 }
 
-/* .carousel-item {
-    border-radius: 50px;
-}
-
-.carousel-inner div img {
-    border-radius: 50px;
-} */
 
 .carousel-caption h5 {
-    background: rgb(120,27,204);
-    background: radial-gradient(circle, rgba(120,27,204,0.9654236694677871) 43%, rgba(226, 228, 196, 0.195) 84%);
+    background: rgb(99, 14, 186);
+    background: radial-gradient(circle, rgba(99, 14, 186, 1) 47%, rgba(107, 107, 101, 0) 100%);
     transition: 1s ease;
     font-size: 25px;
 }
@@ -231,6 +206,7 @@ nav img {
 .carousel-caption h5:hover {
     color: gold;
 }
+
 
 .about {
     display: flex;
@@ -248,7 +224,7 @@ nav img {
     border: 3px solid purple;
 }
 
-.about div h1{
+.about div h1 {
     width: clamp(300px, 30vw, 700px);
     font-size: clamp(20px, 2.5vw, 40px);
 }
@@ -257,7 +233,9 @@ nav img {
     margin: auto 0;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -266,23 +244,23 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
-  input[type=submit] {
-    background-color: rgb(120,27,204);
+}
+
+input[type=submit] {
+    background-color: rgb(120, 27, 204);
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: 1s ease;
-  }
-  
-  input[type=submit]:hover {
+}
+
+input[type=submit]:hover {
     background-color: rgba(121, 27, 204, 0.571);
-  }
-  
-  .container {
+}
+
+.container {
     border-radius: 20px;
     background-color: #f2f2f2;
     padding: 20px;
@@ -290,11 +268,11 @@ input[type=text], select, textarea {
     justify-content: center;
     width: 80vw;
     margin: 0 auto;
-  }
+}
 
 footer {
-    background: rgb(227,228,209);
-    background: linear-gradient(0deg, rgba(227,228,209,0) 0%, rgba(131,47,205,0.8477766106442577) 40%, rgba(120,27,204,0.8589810924369747) 60%, rgba(185,182,189,0) 100%);
+    background: rgb(227, 228, 209);
+    background: linear-gradient(0deg, rgba(227, 228, 209, 0) 0%, rgba(131, 47, 205, 0.8477766106442577) 40%, rgba(120, 27, 204, 0.8589810924369747) 60%, rgba(185, 182, 189, 0) 100%);
     height: 100px;
     display: flex;
     justify-content: flex-start;
