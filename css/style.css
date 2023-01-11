@@ -83,10 +83,15 @@ nav img {
     background-image: url(../website-img/jumbotron.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-attachment: fixed;
     background-size: cover;
     animation: fadein 4s;
     height: 95vh;
+}
+
+@media screen and (min-width: 850px) {
+    .jumbotron {
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (max-height: 400px) {
