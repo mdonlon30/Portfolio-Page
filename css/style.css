@@ -172,12 +172,20 @@ nav img {
 
 .caro {
     width: 500px;
+    box-shadow: 8px 8px 15px rgb(120, 27, 204);
+    transition: .3s ease-out;
+}
+
+.caro:hover {
+    width: 520px;
+    box-shadow: 8px 8px 15px rgba(143, 80, 198, 0.716);
 }
 
 .carousel-item img {
     height: 350px;
     object-fit: cover;
 }
+
 
 .carousel-inner {
     height: auto;
@@ -187,9 +195,11 @@ nav img {
     height: auto;
 }
 
+
 @media screen and (max-width: 500px) {
     .caro {
         width: 100vw;
+        box-shadow: none;
     }
 
     .carousel-item img {
@@ -227,7 +237,7 @@ nav img {
 }
 
 .about div h1 {
-    width: clamp(300px, 30vw, 700px);
+    width: clamp(300px, 40vw, 800px);
     font-size: clamp(20px, 2.5vw, 40px);
 }
 
