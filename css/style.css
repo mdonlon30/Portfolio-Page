@@ -207,6 +207,11 @@ nav img {
         box-shadow: none;
     }
 
+    .caro:hover {
+        width: 100vw;
+        box-shadow: none;
+    }
+
     .carousel-item img {
         height: 35vh;
     }
