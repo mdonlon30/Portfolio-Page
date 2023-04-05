@@ -220,15 +220,22 @@ nav img:hover {
     color: rgb(179, 167, 167);
 }
 
+
+
 .caro {
     width: 500px;
     box-shadow: 8px 8px 15px rgb(4, 177, 25);
-    transition: .3s ease-out;
+    opacity: .3;
+    transition: opacity 2s ease-in-out, width .25s ease-out;
 }
 
-.caro:hover {
+.carousel:hover {
     width: 520px;
-    box-shadow: 8px 8px 15px gold;
+    box-shadow: 8px 8px 15px silver;
+}
+
+.caro.fade-in {
+    opacity: 1;
 }
 
 .carousel-item img {
@@ -244,6 +251,7 @@ nav img:hover {
 .carousel-item {
     height: auto;
 }
+
 
 
 @media screen and (max-width: 500px) {
@@ -304,7 +312,7 @@ nav img:hover {
     height: 370px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid rgb(3, 82, 16);
+    border: 3px solid darkgreen;
 }
 
 .about div h1 {
