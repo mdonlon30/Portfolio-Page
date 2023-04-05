@@ -255,15 +255,12 @@ nav img:hover {
 
 
 @media screen and (max-width: 500px) {
-    .caro {
+    .carousel {
         width: 100vw;
         box-shadow: none;
     }
 
-    .caro:hover {
-        width: 100vw;
-        box-shadow: none;
-    }
+    
 
     .carousel-item img {
         height: 35vh;
