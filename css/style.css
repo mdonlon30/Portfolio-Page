@@ -224,6 +224,11 @@ nav img:hover {
     .carousel-item img {
         height: 35vh;
     }
+
+    .about img {
+        border-radius: none;
+        border-color: black;
+    }
 }
 
 
@@ -315,10 +320,6 @@ input[type=submit]:hover {
 
 .container, label {
     color: white;
-}
-
-input {
-    
 }
 
 footer {
