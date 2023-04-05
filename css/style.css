@@ -32,7 +32,7 @@ nav img {
 
 nav img:hover {
     background-color: gold;
-    
+
 }
 
 .links {
@@ -72,7 +72,42 @@ nav img:hover {
     .links {
         display: none;
     }
+
+    .dropdown-menu li {
+        opacity: 0;
+        animation: fade-in .5s ease-in-out forwards;
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .dropdown-menu li:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .dropdown-menu li:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    .dropdown-menu li:nth-child(3) {
+        animation-delay: 0.4s;
+    }
+
+    .dropdown-menu li:nth-child(4) {
+        animation-delay: 0.6s;
+    }
+
 }
+
 
 .button-style {
     background: rgb(4, 84, 5);
@@ -85,6 +120,7 @@ nav img:hover {
 .dropdown-menu li a {
     font-weight: 500;
 }
+
 
 
 .jumbotron {
@@ -250,7 +286,7 @@ nav img:hover {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(10deg);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(10deg);
 }
 
 
@@ -318,7 +354,8 @@ input[type=submit]:hover {
     margin: 50px auto;
 }
 
-.container, label {
+.container,
+label {
     color: white;
 }
 
