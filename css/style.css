@@ -292,7 +292,9 @@ nav img:hover {
 
 
 .carousel-indicators button {
-    background-color: green !important;
+    background-color: silver !important;
+    height: 10px !important;
+    border-radius: 50% !important;
 }
 
 .carousel-control-prev-icon,
@@ -391,4 +393,9 @@ footer img:hover {
     width: 50px;
     height: 50px;
     transition: .2s ease-in;
+}
+
+
+.carousel-caption {
+    display: none;
 }

@@ -22,3 +22,6 @@ function handleCarouselVisibility() {
 
 document.addEventListener('DOMContentLoaded', handleCarouselVisibility);
 document.addEventListener('scroll', handleCarouselVisibility);
+
+
+
