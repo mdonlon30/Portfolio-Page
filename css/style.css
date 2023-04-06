@@ -129,7 +129,7 @@ nav img:hover {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    animation: fadein 2s;
+    animation: fadein 3s;
     height: 70vh;
 
 }
@@ -225,8 +225,10 @@ nav img:hover {
 .caro {
     width: 500px;
     box-shadow: 8px 8px 15px rgb(4, 177, 25);
-    opacity: .3;
-    transition: opacity 2s ease-in-out, width .25s ease-out;
+    background-color: green;
+    opacity: .15;
+    transition: opacity 2s ease-in, width .25s ease-out;
+    
 }
 
 .carousel:hover {
@@ -260,7 +262,11 @@ nav img:hover {
         box-shadow: none;
     }
 
-    
+    .carousel:hover {
+        width: 100vw;
+        box-shadow: none;
+    }
+
 
     .carousel-item img {
         height: 35vh;
