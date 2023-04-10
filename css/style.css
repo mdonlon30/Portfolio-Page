@@ -343,7 +343,7 @@ textarea {
     resize: vertical;
 }
 
-input[type=submit] {
+#submit-button {
     background-color: rgb(5, 108, 31);
     color: white;
     padding: 12px 20px;
@@ -353,7 +353,7 @@ input[type=submit] {
     transition: 1s ease;
 }
 
-input[type=submit]:hover {
+#submit-button:hover {
     background-color: rgba(3, 55, 11, 0.571);
 }
 

@@ -72,8 +72,6 @@
                         aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                         aria-label="Slide 2"></button>
-                    <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button> -->
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -96,16 +94,6 @@
                             </div>
                         </a>
                     </div>
-                    <!-- <div class="carousel-item">
-                        <a href="https://mdonlon30.github.io/Speaker-Hamburger/">
-                            <img src="./website-img/KRK.PNG" class="d-block w-100" alt="...">
-                        </a>
-                        <a href="https://mdonlon30.github.io/Speaker-Hamburger/">
-                            <div class="carousel-caption d-md-block">
-                                <h5>Hamburger Menu</h5>
-                            </div>
-                        </a>
-                    </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                     data-bs-slide="prev">
@@ -189,20 +177,20 @@
     </div>
 
     <div class="container">
-        <form action="/action_page.php">
+        <form action="https://formspree.io/f/xbjepgov" method="POST">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <input type="text" id="lname" name="Lastname" placeholder="Your last name..">
 
             <label for="lname">E-mail</label>
-            <input type="text" id="lname" name="lastname" placeholder="johnsmith@gmail.com..">
+            <input type="text" id="lname" name="e-mail" placeholder="johnsmith@gmail.com..">
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="subject">Message</label>
+            <textarea id="subject" name="message" placeholder="Write message..." style="height:200px"></textarea>
 
-            <input type="submit" value="Submit">
+            <button type="submit" id="submit-button">Submit</button>
         </form>
     </div>
 
